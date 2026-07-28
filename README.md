@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This repository contains the source code for my portfolio, showcasing my web development projects, technical skills, and learning journey.
 
-🚀 **Live Demo:** [View My Portfolio](https://my-portfolio-p1daxbjhf-humayranuha0s-projects.vercel.app/)
+🚀 **Live Demo:** [View My Portfolio](https://my-portfolio-seven-swart-10.vercel.app/)
 ---
 
 ## ✨ Features
