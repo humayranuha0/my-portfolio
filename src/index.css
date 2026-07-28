@@ -304,3 +304,138 @@ body {
   border-top: 1px solid #1c0b33;
   margin-top: 60px;
 }
+/* ==========================================
+   1. KEYFRAME ANIMATIONS
+   ========================================== */
+
+/* স্মুথ ফেড ইন ইফেক্ট */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* প্রোফাইল পিকচার ফ্লোটিং অ্যানিমেশন */
+@keyframes floatAnimation {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* পেছনের ব্যাকগ্রাউন্ড গ্লো ইফেক্ট */
+@keyframes pulseGlow {
+  0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.5; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.5; }
+}
+
+/* ==========================================
+   2. APPLYING ANIMATIONS TO ELEMENTS
+   ========================================== */
+
+.hero-content, .navbar, .section-title {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.profile-img, .about-img {
+  animation: floatAnimation 4s ease-in-out infinite;
+}
+
+.glow-circle, .glow-circle-purple {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* বাটন ও কার্ডে হোভার অ্যানিমেশন */
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(192, 132, 252, 0.4);
+}
+
+.skill-card, .project-card, .service-card {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover, .project-card:hover {
+  transform: translateY(-6px);
+  border-color: #c084fc;
+}
+
+/* ==========================================
+   3. MOBILE & TABLET RESPONSIVE QUERIES
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+  /* নেভবার রেসপন্সিভ */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+  
+  .nav-links {
+    gap: 15px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* হিরো সেকশন মোবাইল ফিক্স */
+  .hero-section {
+    flex-direction: column-reverse; /* ছবি ওপরে, টেক্সট নিচে যাবে */
+    text-align: center;
+    min-height: auto;
+    padding-top: 20px;
+    gap: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+  }
+
+  .profile-img, .about-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .glow-circle, .glow-circle-purple {
+    width: 210px;
+    height: 210px;
+  }
+
+  /* এবাউট সেকশন মোবাইল ফিক্স */
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  /* কন্টাক্ট ফর্ম এবং ইনপুট ওভারফ্লো ফিক্স */
+  .contact-form {
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  .input-group input, 
+  .input-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* গ্রিড লেআউট ফিক্স */
+  .skills-grid, .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
