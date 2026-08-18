@@ -69,7 +69,7 @@ const Hero = () => {
       <div className="container">
         <div className="row align-items-center gy-5">
           <div className="col-lg-7">
-            <span className="text-uppercase tracking-wider small fw-bold pink-accent d-block mb-2">
+            <span className="text-uppercase tracking-wider small fw-bold pink-accent pt-5 d-block mb-2">
               HI, I'M
             </span>
 
