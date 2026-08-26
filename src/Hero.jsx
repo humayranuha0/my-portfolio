@@ -100,7 +100,7 @@ const Hero = () => {
 
             <div className="d-flex flex-wrap gap-3 align-items-center">
               <a
-                href="Nuha CV.pdf"
+                href="Humayra_Cv.pdf"
                 download="Nuha_CV.pdf"
                 style={resumeBtnStyle}
                 onMouseEnter={() => setIsResumeHovered(true)}
