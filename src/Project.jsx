@@ -1,6 +1,9 @@
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
+
+
+
 const Projects = () => {
   const projects = [
     {
@@ -8,7 +11,7 @@ const Projects = () => {
       tag: "FULL-STACK WEB APPLICATION",
       title: "Healthcare Management",
       image:
-        "https://media.licdn.com/dms/image/v2/D562DAQEchzq8Zbl9sQ/profile-treasury-image-shrink_480_480/B56aARzKjgKEAU-/0/1787005020638?e=1787677200&v=beta&t=kDttaRlYJJo2Dz1pn6l4mawdy8VNFJrn7lr0afi7rCg", // তোমার স্ক্রিনশটের ইমেজ লিংক
+        "./project1.jpg",
       description:
         "A comprehensive healthcare portal designed to manage doctor appointments, patient medical records, and administrative workflows seamlessly. Built with a robust full-stack architecture ensuring fast performance and data security.",
       techStack: [
@@ -29,7 +32,7 @@ const Projects = () => {
       tag: "FULL-STACK WEB APPLICATION",
       title: "Flower Shop",
       image:
-        "https://media.licdn.com/dms/image/v2/D562DAQHNQ1z5O_B5Lw/profile-treasury-image-shrink_480_480/B56Z.atwR0JoAU-/0/1785007113578?e=1787677200&v=beta&t=gV2jb8rhMxjH0VmYTGsjBUDpgcBUjT0DbtqMf7BOuio", // তোমার স্ক্রিনশটের ইমেজ লিংক
+       "./project2.jpg",
       description:
         "A feature-rich e-commerce platform built for online flower ordering, complete with product categories, interactive cart management, dynamic animations, and responsive backend API integration.",
       techStack: [
