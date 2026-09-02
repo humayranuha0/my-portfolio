@@ -1,9 +1,15 @@
 import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
+
 const Education = () => {
   return (
-    <section id="education" className="py-5 bg-white">
-      <div className="container text-center mb-5">
+    <section id="education" className="py-5 bg-white overflow-hidden">
+      {/* Section Header */}
+      <div
+        className="container text-center mb-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <span className="text-uppercase tracking-wider small pink-accent fw-bold">
           MY ACADEMICS
         </span>
@@ -11,24 +17,33 @@ const Education = () => {
         <div className="pink-divider"></div>
       </div>
 
+      {/* Education Card */}
       <div className="container d-flex justify-content-center">
         <div
-          className="cute-card p-4 p-md-5 bg-white w-100 d-flex align-items-center gap-4"
+          className="cute-card p-4 p-md-5 bg-white w-100 d-flex align-items-center gap-4 shadow-sm"
           style={{ maxWidth: "900px" }}
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
         >
+          {/* Graduation Cap Icon Circle */}
           <div
-            className="rounded-circle d-flex align-items-center justify-content-center"
+            className="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
             style={{
               width: "70px",
               height: "70px",
               backgroundColor: "#fff0f3",
               color: "#ff4757",
-              fontSize: "2rem",
+              fontSize: "1.8rem",
             }}
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1000"
           >
             <FaGraduationCap />
           </div>
 
+          {/* Details */}
           <div className="flex-grow-1">
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-1">
               <h3 className="fw-bold text-dark mb-0 fs-3">

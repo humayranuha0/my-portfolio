@@ -1,9 +1,14 @@
 import React from "react";
+import AOS from "aos";
 
 const About = () => {
   return (
-    <section id="about" className="py-5 bg-white">
-      <div className="container text-center mb-5">
+    <section id="about" className="py-5 bg-white overflow-hidden">
+      <div
+        className="container text-center mb-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <span className="text-uppercase tracking-wider small pink-accent fw-bold">
           GET TO KNOW ME
         </span>
@@ -14,7 +19,12 @@ const About = () => {
       </div>
 
       <div className="container" style={{ maxWidth: "900px" }}>
-        <div className="cute-card p-4 p-md-5 bg-white">
+        <div
+          className="cute-card p-4 p-md-5 bg-white rounded-4 shadow-sm"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
           <h3 className="fw-bold mb-3 text-dark">
             Crafting full-stack web experiences with{" "}
             <span className="pink-accent">purpose & precision</span>
@@ -28,9 +38,14 @@ const About = () => {
           </p>
 
           <div className="row g-4 pt-3">
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+            >
               <div
-                className="p-3 rounded-4"
+                className="p-3 rounded-4 h-100"
                 style={{ backgroundColor: "#fff0f3" }}
               >
                 <h6 className="pink-accent fw-bold mb-1">
@@ -42,9 +57,14 @@ const About = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="550"
+              data-aos-duration="1000"
+            >
               <div
-                className="p-3 rounded-4"
+                className="p-3 rounded-4 h-100"
                 style={{ backgroundColor: "#fff0f3" }}
               >
                 <h6 className="pink-accent fw-bold mb-1">Backend & APIs</h6>
@@ -54,9 +74,14 @@ const About = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+            >
               <div
-                className="p-3 rounded-4"
+                className="p-3 rounded-4 h-100"
                 style={{ backgroundColor: "#fff0f3" }}
               >
                 <h6 className="pink-accent fw-bold mb-1">

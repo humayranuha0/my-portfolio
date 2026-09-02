@@ -473,3 +473,29 @@ body {
 .footer-copy {
   font-size: 0.8rem;
 }
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(255, 71, 87, 0.12) !important;
+  border-color: #ff4757 !important;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.08);
+}
+
+.project-icon-link {
+  display: inline-block;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-icon-link:hover {
+  transform: scale(1.25);
+}
+
+.project-card:hover .tech-badge {
+  background-color: #ff4757 !important;
+  color: #ffffff !important;
+}

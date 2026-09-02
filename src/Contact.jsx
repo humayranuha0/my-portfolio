@@ -131,7 +131,7 @@ const Contact = () => {
                       LOCATION
                     </span>
                     <span className="fw-bold text-dark small">
-                    Sylhet, Bangladesh
+                      Sylhet, Bangladesh
                     </span>
                   </div>
                 </div>
